@@ -28,7 +28,6 @@ public class MySQLConnection {
 
         }
     }
-
     public String getDbName() {
         return dbName;
     }
