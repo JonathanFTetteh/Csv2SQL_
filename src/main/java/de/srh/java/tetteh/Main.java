@@ -25,7 +25,7 @@ public class Main {
 
     }
                 public static void propertyReader(){
-                    final String PATH = "src/main/resources/config.properties_examples";
+                    final String PATH = "src/main/resources/config.properties";
                     System.out.println(PATH);
                     try {
                         InputStream input = new FileInputStream(PATH);

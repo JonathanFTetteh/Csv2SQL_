@@ -70,8 +70,9 @@ public class MySQLConnection {
                 String createDatabase = "CREATE DATABASE IF NOT EXISTS " + dbName; //creates database
                 stmt.executeUpdate(createDatabase);
 
-                connection.close();
                 stmt.close();
+                connection.close();
+
                 System.out.println("<< Database created successfully >>");
                 databaseCheck = true;
             }
@@ -111,8 +112,9 @@ public class MySQLConnection {
             stmt.executeUpdate(createTableCountries);
             stmt.executeUpdate(createTableCities);
 
-            connection.close();
             stmt.close();
+            connection.close();
+
 
             System.out.println("Tabellen angelegt");
         }
